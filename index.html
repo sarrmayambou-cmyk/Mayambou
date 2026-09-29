@@ -3,63 +3,139 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mayambou Sarr – Portfolio</title>
-  <meta name="description" content="Portfolio de Mayambou Sarr : projets, compétences et contact.">
+  <title>Mayambou Sarr – Consultant RGPD &amp; AI Act</title>
+  <meta name="description" content="Mayambou Sarr, consultant en protection des données personnelles : conformité RGPD, AI Act, DPO externalisé, audits et formations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="nav">
-    <a href="#accueil" class="logo">M.S</a>
-    <nav>
+    <a href="#accueil" class="logo"><span>M</span>ayambou Sarr</a>
+    <button id="menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav id="links">
+      <a href="#expertise">Expertise</a>
+      <a href="#prestations">Prestations</a>
+      <a href="#methode">Méthode</a>
       <a href="#apropos">À propos</a>
-      <a href="#competences">Compétences</a>
-      <a href="#projets">Projets</a>
-      <a href="#contact">Contact</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="cta">Me contacter</a>
     </nav>
     <button id="theme" aria-label="Changer de thème">◐</button>
   </header>
 
   <main>
     <section id="accueil" class="hero">
-      <p class="eyebrow">Bonjour, je suis</p>
-      <h1>Mayambou Sarr</h1>
-      <p class="lead">Développeur créatif. Je conçois des expériences web claires, rapides et accessibles.</p>
-      <div class="actions">
-        <a class="btn" href="#projets">Voir mes projets</a>
-        <a class="btn ghost" href="#contact">Me contacter</a>
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Consultant en protection des données</p>
+          <h1>Conformité RGPD et AI&nbsp;Act, <em>sans jargon</em>.</h1>
+          <p class="lead">J'accompagne les entreprises, les start-ups et les organisations publiques pour protéger les données personnelles, encadrer leurs usages de l'IA et transformer la conformité en avantage de confiance.</p>
+          <div class="actions">
+            <a class="btn" href="#contact">Discutons de votre projet</a>
+            <a class="btn ghost" href="#prestations">Découvrir les prestations</a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Domaines d'expertise">
+          <div class="chip">RGPD</div>
+          <div class="chip">AI Act</div>
+          <div class="chip">DPO externalisé</div>
+          <div class="chip">Audit &amp; AIPD</div>
+          <p>Un interlocuteur unique pour la donnée et l'intelligence artificielle.</p>
+        </aside>
       </div>
     </section>
 
-    <section id="apropos">
-      <h2>À propos</h2>
-      <p>Passionné par le web et le design, je transforme des idées en produits utiles. Remplacez ce texte par votre parcours, vos valeurs et ce qui vous distingue.</p>
-    </section>
-
-    <section id="competences">
-      <h2>Compétences</h2>
-      <ul class="tags">
-        <li>HTML &amp; CSS</li><li>JavaScript</li><li>Design UI/UX</li>
-        <li>Accessibilité</li><li>Git</li><li>Gestion de projet</li>
-      </ul>
-    </section>
-
-    <section id="projets">
-      <h2>Projets</h2>
-      <div class="grid">
-        <article class="card"><h3>Projet un</h3><p>Courte description du projet, du problème résolu et des technologies utilisées.</p><a href="#">Voir le projet →</a></article>
-        <article class="card"><h3>Projet deux</h3><p>Courte description du projet, du problème résolu et des technologies utilisées.</p><a href="#">Voir le projet →</a></article>
-        <article class="card"><h3>Projet trois</h3><p>Courte description du projet, du problème résolu et des technologies utilisées.</p><a href="#">Voir le projet →</a></article>
+    <section id="expertise">
+      <div class="wrap">
+        <p class="eyebrow">Expertise</p>
+        <h2>Deux réglementations, une même exigence de confiance</h2>
+        <div class="cols">
+          <article class="panel">
+            <span class="icon">§</span>
+            <h3>RGPD</h3>
+            <p>Mise en conformité, registre des traitements, analyses d'impact (AIPD), gestion des droits des personnes, contrats de sous-traitance, transferts hors UE et gestion des violations de données.</p>
+          </article>
+          <article class="panel">
+            <span class="icon">AI</span>
+            <h3>AI Act</h3>
+            <p>Cartographie de vos systèmes d'IA, classification par niveau de risque, obligations de transparence et de gouvernance, documentation et articulation avec le RGPD.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Un projet, une question ? Écrivez-moi.</p>
-      <a class="btn" href="mailto:sarrmayambou@gmail.com">sarrmayambou@gmail.com</a>
+    <section id="prestations" class="alt">
+      <div class="wrap">
+        <p class="eyebrow">Prestations</p>
+        <h2>Comment je peux vous aider</h2>
+        <div class="grid">
+          <article class="card"><h3>Audit de conformité</h3><p>État des lieux de vos traitements et de vos pratiques, avec un plan d'action priorisé et réaliste.</p></article>
+          <article class="card"><h3>DPO externalisé</h3><p>Une fonction de délégué à la protection des données assurée à distance, adaptée à la taille de votre structure.</p></article>
+          <article class="card"><h3>Conformité AI Act</h3><p>Inventaire et classification de vos systèmes d'IA, gouvernance interne et préparation aux obligations applicables.</p></article>
+          <article class="card"><h3>AIPD</h3><p>Analyses d'impact relatives à la protection des données pour vos traitements et projets à risque.</p></article>
+          <article class="card"><h3>Formation &amp; sensibilisation</h3><p>Sessions pour les équipes, les dirigeants et les métiers : concrètes, pratiques, adaptées à votre contexte.</p></article>
+          <article class="card"><h3>Documentation juridique</h3><p>Politiques de confidentialité, procédures, clauses contractuelles et registres, rédigés pour être utilisés.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="methode">
+      <div class="wrap">
+        <p class="eyebrow">Méthode</p>
+        <h2>Une approche claire, en quatre étapes</h2>
+        <ol class="steps">
+          <li><strong>Comprendre</strong><span>Échange sur votre activité, vos données et vos usages de l'IA.</span></li>
+          <li><strong>Diagnostiquer</strong><span>Cartographie des traitements et des risques, écarts par rapport aux textes.</span></li>
+          <li><strong>Mettre en conformité</strong><span>Plan d'action, documents et procédures opérationnels.</span></li>
+          <li><strong>Maintenir</strong><span>Suivi, veille réglementaire et amélioration continue.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="apropos" class="alt">
+      <div class="wrap about">
+        <div class="avatar" aria-hidden="true">MS</div>
+        <div>
+          <p class="eyebrow">À propos</p>
+          <h2>Mayambou Sarr</h2>
+          <p>Consultant en protection des données personnelles, je me consacre au RGPD et à l'AI Act. Ma conviction : la conformité doit servir l'activité, pas la freiner. Je traduis les exigences juridiques en actions simples, proportionnées et adaptées à votre réalité.</p>
+          <ul class="values">
+            <li>Pragmatisme avant tout</li>
+            <li>Langage clair, sans jargon</li>
+            <li>Confidentialité et rigueur</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap narrow">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions fréquentes</h2>
+        <details><summary>Mon entreprise est-elle concernée par le RGPD ?</summary><p>Dès que vous traitez des données personnelles (clients, salariés, prospects, utilisateurs), le RGPD s'applique, quelle que soit votre taille.</p></details>
+        <details><summary>L'AI Act me concerne-t-il si j'utilise seulement des outils d'IA ?</summary><p>Oui, en tant qu'utilisateur (« déployeur ») de systèmes d'IA, vous pouvez avoir des obligations. Un premier inventaire permet de le vérifier.</p></details>
+        <details><summary>Intervenez-vous à distance ?</summary><p>Oui, la plupart des missions peuvent se faire à distance. Des interventions sur site sont possibles selon le besoin.</p></details>
+        <details><summary>Comment obtenir un devis ?</summary><p>Écrivez-moi via le formulaire de contact ci-dessous : je reviens vers vous avec une proposition adaptée.</p></details>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap narrow center">
+        <h2>Parlons de votre conformité</h2>
+        <p>Un projet, une question, un audit à planifier ? Écrivez-moi, la première prise de contact est sans engagement.</p>
+        <a class="btn light" href="mailto:sarrmayambou@gmail.com?subject=Demande%20de%20contact%20%E2%80%93%20RGPD%20%2F%20AI%20Act">sarrmayambou@gmail.com</a>
+      </div>
     </section>
   </main>
 
-  <footer>© <span id="year"></span> Mayambou Sarr</footer>
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year"></span> Mayambou Sarr – Consultant RGPD &amp; AI Act</span>
+      <a href="#accueil">Haut de page ↑</a>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

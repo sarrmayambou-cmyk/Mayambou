@@ -12,3 +12,16 @@ document.getElementById('theme').addEventListener('click', () => {
   root.dataset.theme = next;
   try { localStorage.setItem('theme', next); } catch (e) {}
 });
+
+const menu = document.getElementById('menu');
+const links = document.getElementById('links');
+menu.addEventListener('click', () => {
+  const open = links.classList.toggle('open');
+  menu.setAttribute('aria-expanded', open);
+});
+links.addEventListener('click', e => {
+  if (e.target.tagName === 'A') {
+    links.classList.remove('open');
+    menu.setAttribute('aria-expanded', 'false');
+  }
+});
