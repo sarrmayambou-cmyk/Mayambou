@@ -1,0 +1,52 @@
+:root {
+  --bg: #fafaf9; --fg: #1c1917; --muted: #78716c; --card: #fff;
+  --accent: #4f46e5; --border: #e7e5e4;
+}
+:root[data-theme="dark"] {
+  --bg: #0c0a09; --fg: #f5f5f4; --muted: #a8a29e; --card: #1c1917;
+  --accent: #818cf8; --border: #292524;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: var(--accent); text-decoration: none; }
+.nav {
+  position: sticky; top: 0; z-index: 10; display: flex; align-items: center;
+  justify-content: space-between; gap: 1rem; padding: .9rem 1.25rem;
+  background: color-mix(in srgb, var(--bg) 85%, transparent);
+  backdrop-filter: blur(8px); border-bottom: 1px solid var(--border);
+}
+.nav nav { display: flex; gap: 1.25rem; flex-wrap: wrap; }
+.nav nav a { color: var(--fg); font-size: .95rem; }
+.logo { font-weight: 800; color: var(--fg); }
+#theme {
+  background: none; border: 1px solid var(--border); color: var(--fg);
+  border-radius: 8px; padding: .3rem .6rem; cursor: pointer; font-size: 1rem;
+}
+main { max-width: 900px; margin: 0 auto; padding: 0 1.25rem; }
+section { padding: 4.5rem 0 1rem; }
+h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 1.05; margin: .2rem 0 1rem; }
+h2 { font-size: 1.8rem; margin: 0 0 1rem; }
+.hero { padding-top: 6rem; }
+.eyebrow { color: var(--accent); font-weight: 600; margin: 0; }
+.lead { font-size: 1.25rem; color: var(--muted); max-width: 36rem; }
+.actions { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.btn {
+  display: inline-block; padding: .7rem 1.3rem; border-radius: 10px;
+  background: var(--accent); color: #fff; font-weight: 600;
+}
+.btn.ghost { background: none; color: var(--fg); border: 1px solid var(--border); }
+.tags { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .6rem; }
+.tags li { padding: .4rem .9rem; border: 1px solid var(--border); border-radius: 999px; background: var(--card); }
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+  padding: 1.25rem; transition: transform .2s, box-shadow .2s;
+}
+.card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgb(0 0 0 / .08); }
+.card h3 { margin: 0 0 .4rem; }
+.card p { color: var(--muted); margin: 0 0 .8rem; }
+footer { text-align: center; color: var(--muted); padding: 4rem 1rem 2rem; font-size: .9rem; }
